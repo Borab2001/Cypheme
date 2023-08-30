@@ -1,0 +1,59 @@
+.section {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1472px;
+}
+.container {
+    grid-column: span 10/span 10;
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: repeat(10,minmax(0,1fr));
+    -moz-column-gap: 2.5rem;
+    column-gap: 2.5rem;
+    border-radius: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(19 20 21/var(--tw-bg-opacity));
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        -moz-column-gap: 1rem;
+        column-gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(12,minmax(0,1fr));
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section {
+        max-width: none;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        column-gap: 1rem;
+        padding-bottom: 2.5rem;
+        padding-top: 2.25rem;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .section {
+        grid-column: 1/-1;
+        grid-template-columns: repeat(12,minmax(0,1fr));
+        align-items: center;
+        column-gap: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 1536px) {
+    .section {
+        max-width: none;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
